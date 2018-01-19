@@ -1,0 +1,206 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	.title-default
+		&:before
+			left: -12%
+			width: 120px
+
+@media only screen and (max-width : 1200px)
+	.title-default
+		&:before
+			display: none
+	.history
+		.history__video
+			.video__wrap
+				&:before
+					font-size: 150px
+					left: -39%
+	.schedule
+		.schedule__table
+			&:before
+				font-size: 100px
+				left: -34%
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.schedule
+		.schedule__table
+			&:before
+				display: none
+	.history
+		.history__video
+			.video__wrap
+				&:before
+					display: none
+	.program
+		padding-top: 50px
+		.program-container
+			margin-top: 50px
+			.item-first, .item-second
+				padding-left: 0
+				&:before
+					display: none
+				.item__description
+					margin-left: 20px
+			.program__item
+				.item__title
+					transform: rotate(0deg)
+					left: 45%
+			.item-second
+				.item__title
+					top: 0
+			.speaker__fifth
+				.item__foto
+					padding: 0
+					flex-basis: 44%
+	.location
+		.wrap__page
+			justify-content: center
+			.map
+				margin: 0 0 30px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px)
+	.main-footer
+		.wrap__page
+			flex-direction: column
+			justify-content: center
+			.social-btn
+				margin-bottom: 20px
+	.location
+		padding: 50px 0 0
+	.schedule
+		padding-top: 30px
+		.schedule-text__sub
+			font-size: 18px
+		.schedule__table
+			margin-bottom: 50px
+			.table__item
+				p
+					&:last-child
+						font-size: 16px
+					&:first-child
+						font-size: 20px
+	.btn
+		width: 200px
+		height: 50px
+		line-height: 50px
+		font-size: 16px
+	.main-header
+		.header__title
+			h1
+				font-size: 32px
+	.history
+		.history__video
+			.video__wrap
+				width: 80%
+				padding-bottom: 45%
+				&:after
+					display: none
+	.program
+		.program-container
+			.item-first, .item-second
+				.item__description
+					padding-top: 30px
+					flex-basis: 53%
+					font-size: 14px
+					.description__sub
+						font-size: 14px
+			.speaker__third
+				margin-top: 0px
+			.speaker__fifth
+				margin-top: 0
+				.item__foto
+					flex-basis: 37%
+			.program__item
+				margin-bottom: 65px
+				.item__title
+					font-size: 20px
+					left: 38%
+					top: -5%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 420px)
+	.location
+		.wrap__page
+			.map
+				iframe
+					width: 280px
+					height: 180px
+			.program__title
+				margin-bottom: 45px
+	.schedule
+		.schedule__table
+			margin-top: 50px
+			.table__item
+				margin-bottom: 35px
+				p
+					&:first-child
+						i
+							display: none
+						span
+							margin-left: 0
+	.main-header
+		.header__title
+			margin-top: 55px
+			h1
+				font-size: 24px
+			.date
+				font-size: 18px
+	.title-default
+		h3
+			font-size: 32px
+	.program
+		.program-container
+			.program__item
+				flex-wrap: wrap
+				.item__foto
+					flex-basis: 100%
+	.program .program-container .item-first .item__description, .program .program-container .item-second .item__description
+		flex-basis: 90%
+	.program
+		padding-bottom: 20px
+		.program-container
+			.program__item
+				.item__title
+					left: 20%
+					padding: 0
+					font-size: 16px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,472 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+a
+	text-decoration: none
+	color: #000
+
+h1,h3,p
+	margin: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	font-weight: normal
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	+r(420)
+		margin: 0 auto
+
+.wrap__page
+	max-width: 1160px
+	margin: 0 auto
+	padding: 0 1em
+
+.btn
+	display: block
+	background: url(../img/btn-bg.png) no-repeat top center
+	background-size: cover
+	width: 354px
+	height: 87px
+	line-height: 87px
+	text-align: center
+	margin: 0 auto
+	border-radius: 15px
+	transition: all 0.5s
+	font-size: 24px
+	font-family: $gotham
+	font-weight: bolder
+	text-transform: uppercase
+	&:hover
+		box-shadow: 0 0 30px rgb(65,184,254)
+
+.title-default
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 25px
+		left: -395px
+		background: linear-gradient(to right, rgb(44,27,97) 20%, rgb(226,25,47) 80%)
+		height: 1px
+		width: 350px
+	h3
+		font-size: 48px
+		font-family: $gotham
+		font-weight: bold
+		line-height: 1
+		span
+			color: $accent
+.social-btn
+	display: flex
+	.btn__link
+		width: 40px
+		height: 40px
+		background: url(../img/icon.png) no-repeat
+		transition: all 0.5s
+		margin-right: 15px
+	.fb
+		background-position: -6px -46px
+		&:hover
+			background-position: -6px -4px
+	.tl
+		background-position: -57px -46px
+		&:hover
+			background-position: -57px -4px
+	.mail
+		background-position: -107px -46px
+		margin-right: 0
+		&:hover
+			background-position: -107px -4px
+
+.main-header
+	background: url(../img/header-bg.png) no-repeat top center
+	background-size: cover
+	padding: 40px 0 70px
+	.header__title
+		margin-top: 105px
+		color: #fff
+		position: relative
+		padding-left: 50px
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			bottom: 28px
+			left: 15px
+			width: 11px
+			background: linear-gradient( 0deg, rgb(44,27,97) 0%, rgb(226,25,47))
+		h1
+			font-family: $gotham
+			font-size: 48px
+		.date
+			display: block
+			font-size: 30px
+			margin-top: 34px
+	.header__social
+		margin-top: 107px
+		padding-left: 50px
+
+.history
+	padding: 4em 0 60px
+	.history__title			
+		.title__sub
+			color: #94a0a8
+			font-size: 30px
+	.history__video
+		position: relative
+		max-width: 1130px
+		margin: 80px auto 70px
+		&:before
+			display: table
+			content: ''
+		.video__wrap
+			position: relative
+			width: 65%
+			height: 0
+			padding-bottom: 37%
+			margin: 0 auto
+			&:after
+				content: ''
+				position: absolute
+				top: 25%
+				right: -5px
+				width: 11px
+				height: 220px
+				background: $accent
+
+			.frame
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+
+.program
+	background: url(../img/program-bg.png) no-repeat top center
+	background-size: cover
+	padding: 120px 0 145px
+	color: #fff
+	font-size: 18px
+	.program-container
+		margin-top: 170px
+		.program__item
+			display: flex
+			position: relative
+			margin-bottom: 145px
+			.item__foto
+				flex-basis: 36%
+			.item__title
+				position: absolute
+				top: 19%
+				left: 4.5%
+				text-transform: uppercase
+				font-size: 30px
+				font-family: $gotham
+				font-weight: bold
+				transform: rotate(-90deg)
+				span
+					color: $accent
+			.item__description
+				p
+					margin-bottom: 15px
+				.description__sub
+					font-size: 24px
+					margin-top: 27px
+					border-style: solid
+					border-width: .1rem 0 0 0 
+					border-image: linear-gradient(to right, rgb(44,27,97) 20%, rgb(226, 25, 47) 80% ) 1
+					padding-top: 20px
+					span
+						opacity: .5
+						display: block
+
+		.item-first
+			padding-left: 240px
+			.item__description
+				margin-left: 63px
+				padding-top: 120px
+			p
+				margin-bottom: 10px
+			.description__sub
+				span
+					display: inline
+					margin-right: 65px
+					&:last-child
+						margin-right: 0
+			&:before
+				content: ''
+				position: absolute
+				top: -30%
+				left: 42%
+				font-size: 146px
+				font-family: $gotham
+				background: linear-gradient(to left, #e2192f, #2c1b61)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				font-family: $gotham
+		.speaker__first
+			&:before
+				content: '01'
+		.speaker__third
+			margin-top: 200px
+			&:before
+				content: '03'
+			.item__title
+				top: 11%
+				left: 7%
+		.speaker__fifth
+			margin: 200px 0 120px
+			&:before
+				content: '05'
+			.item__foto
+				flex-basis: 55%
+				padding-left: 50px
+		.item-second
+			padding-left: 80px
+			&:before
+				content: ''
+				position: absolute
+				bottom: -95px
+				left: -2%
+				font-size: 146px
+				font-family: $gotham
+				font-weight: bold
+				background: linear-gradient(to left, #e2192f, #2c1b61)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+			.item__foto
+				flex-basis: 36%
+			.item__description
+				flex-basis: 55%
+				padding-top: 35px
+			.item__title
+				top: 72%
+				left: 21%
+		.speaker__second
+			&:before
+				content: '02'
+		.speaker__fourth
+			&:before
+				content: '04'
+
+		.item-fifth
+			padding-left: 44px
+
+.schedule-text__sub
+	text-align: center
+	font-size: 24px
+	color: #94a0a8
+
+.text__active
+	padding: 0 50px
+	margin-bottom: 50px
+	+r(425)
+		padding: 0
+		font-size: 18px
+
+.ticket__btn
+	margin-bottom: 15px
+
+.schedule
+	padding: 115px 0 50px
+	.schedule__table
+		max-width: 735px
+		margin: 130px auto 170px
+		position: relative
+		&:before
+			content: 'ВРЕМЯ'
+			position: absolute
+			transform: rotate(-90deg)
+			left: -83%
+			top: 39%
+			font-size: 254px
+			font-family: $gotham
+			font-weight: bold
+			color: #eceeef
+		.table__item
+			display: flex
+			justify-content: space-between
+			margin-bottom: 70px
+			position: relative
+			align-items: center
+			&:after
+				content: ''
+				width: 680px
+				height: 1px
+				background-color: rgb(236, 238, 239)
+				position: absolute
+				bottom: -20px
+				right: 0
+			p
+				&:first-child
+					font-family: $gotham
+					font-size: 36px
+					display: flex
+					align-items: center
+					i
+						width: 40px
+						height: 40px
+						background: url(../img/icon2.png) 0 0 no-repeat
+						position: relative
+						&:after
+							content: ''
+							position: absolute
+							top: 0
+							right: -30px
+							background: linear-gradient(to bottom, #e2192f, #2c1b61)
+							width: 10px
+							height: 40px
+					.icon-start
+						background-position: -40px -36px
+					.icon-user
+						background-position: -40px 2px
+					.icon-break
+						background-position: -77px 2px
+					.icon-gift
+						background-position: -77px -38px
+					.icon-party
+						background-position: 0px -38px
+					span
+						margin-left: 50px
+
+			p
+				&:last-child
+					color: #94a0a8
+					font-size: 24px
+
+.tickets
+	padding: 5rem 0
+	.wrap__page
+		.tickets__title
+			text-align: center
+			font-family: $gotham
+			font-size: 34px
+			margin-bottom: 30px
+		.tickets__layouts
+			margin-bottom: 55px
+			display: flex
+			justify-content: center
+			.layouts__text
+				align-self: center
+				font-size: 24px
+				+r(650)
+					flex-basis: 30%
+				+r(425)
+					font-size: 12px
+				+r(320)
+					flex-basis: 40%
+				.text__top
+					color: #43b7fe
+					margin-bottom: 50px
+					+r(650)
+						margin-bottom: 30px
+
+		.change__ticket
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			margin-top: 2em
+			+r(768)
+				flex-direction: column
+				align-items: center
+				justify-content: center
+			+r(600)
+				margin-top: 10em
+			.ticket-default
+				border: 1px solid #eceeef
+				margin: 0 20px 20px
+				padding: 30px 0
+				width: 430px
+				+r(600)
+					width: 290px
+					height: 100%
+					margin: 0 0 20px
+				.text__tickets-top
+					text-align: center
+					font-size: 36px
+					font-family: $gotham
+					font-weight: bolder
+					margin-bottom: 20px
+.text__tickets
+	font-family: $default-font
+	font-size: 36px
+	margin-bottom: 20px
+	text-align: center
+
+.location
+	padding: 125px 0
+	background: url(../img/location-bg.png) no-repeat top center
+	background-size: cover
+	color: #fff
+	.wrap__page
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: center
+		.program__title
+			flex-basis: 100%
+			margin-bottom: 150px
+		.map
+			margin: 0px 90px 0 0
+		.desc
+			p
+				&:first-child
+					font-size: 30px
+					font-family: $gotham
+					text-transform: uppercase
+					font-weight: bold
+					color: #fff
+				span
+					color: $accent
+			.desc__text
+				color: #94a0a8
+				font-size: 24px
+				margin: 35px 0 55px
+			.btn
+				margin: 0
+.main-footer
+	background-color: rgb(4, 4, 31)
+	padding: 3em 0
+	.wrap__page
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		padding: 0 3em
+
+		
+@import "media" // Всегда в конце
